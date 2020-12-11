@@ -16,7 +16,7 @@ after_success:
   - docker build -t shchepinsky/multi-worker ./worker
   # log into docker CLI
   # pipe emits output of echo to the stdin of docker command
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --pasword-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push images to docker hub
   - docker push shchepinsky/multi-client
   - docker push shchepinsky/multi-nginx
