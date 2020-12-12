@@ -6,14 +6,14 @@
       "image": "shchepinsky/multi-client",
       "hostname": "client",
       "memory": 128,
-      "essential": false,
+      "essential": false
     },
     {
       "name": "server",
       "image": "shchepinsky/multi-server",
       "hostname": "api",
       "memory": 128,
-      "essential": false,
+      "essential": false
     },
     {
       "name": "worker",
