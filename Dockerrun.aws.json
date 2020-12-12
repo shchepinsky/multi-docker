@@ -5,25 +5,28 @@
       "name": "client",
       "image": "shchepinsky/multi-client",
       "hostname": "client",
+      "memory": 128,
       "essential": false,
-      "memory": 128
     },
     {
       "name": "server",
       "image": "shchepinsky/multi-server",
       "hostname": "api",
-      "essential": false
+      "memory": 128,
+      "essential": false,
     },
     {
       "name": "worker",
       "image": "shchepinsky/multi-worker",
       "hostname": "worker",
+      "memory": 128,
       "essential": false
     },
     {
       "name": "nginx",
       "image": "shchepinsky/multi-nginx",
       "hostname": "nginx",
+      "memory": 128,
       "essential": true,
       "portMappings": [
         {
