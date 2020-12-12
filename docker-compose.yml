@@ -27,11 +27,11 @@ services:
       # specify host by service name
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - PGUSER=postgres
-      - PGHOST=postgres
-      - PGPORTT=5432
-      - PGDATABASE=postgres
-      - PGPASSWORD=postgres_password
+      - PG_USER=postgres
+      - PG_PASSWORD=postgres_password
+      - PG_HOST=postgres
+      - PG_PORT=5432
+      - PG_DATABASE=postgres
   client:
     stdin_open: true
     build:
