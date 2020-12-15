@@ -7,6 +7,7 @@ function App() {
     <Router>
       <div>
         <header>
+          <div>{process.env.NODE_ENV}</div>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
